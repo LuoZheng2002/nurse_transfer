@@ -1,2 +1,20 @@
 Use stratefy=y in train test split to ensure the training and testing sets have the same label distributions.
-asdfg
+
+These methods evaluate each feature independently of others:
+
+Chi-squared test – Categorical targets only
+
+Mutual information (MI) – Captures nonlinear dependency; doesn't assume independence between features, but evaluates each feature independently with the target
+
+ANOVA F-test – Measures linear dependency with the target (for regression or classification)
+
+Correlation coefficient (e.g., Pearson/Spearman) – For continuous features
+
+✅ These methods are completely independent of other features, hence insensitive to covariance.
+
+
+添加Random forest作为特征选择的方法
+保留SMOTE方法，因为我们的dataset的体量不适合更高级的方法
+添加TabNet作为候选模型
+添加超参数搜索范围的描述，并与最终选择进行比较
+添加对特征选择模型的描述和参数选择
