@@ -1,0 +1,15 @@
+Best trial: 5. Best value: 0.694157: 100%|██████████| 100/100 [02:37<00:00,  1.58s/it]
+RandomForestClassifier Cross-Validation Performance:
+Best trial:
+  Value: 0.6941570881226053
+  Best hyperparameters:
+    Adopt StandardScalar for numeric features: True
+    Adopt OneHotEncoder for categorical features: True
+    Adopt feature selection: None
+    Adopt oversampling using SMOTE: False
+    n_estimators: 727
+    max_depth: 15
+    min_samples_split: 15
+    min_samples_leaf: 9
+    max_features: log2
+    random_state: 42
