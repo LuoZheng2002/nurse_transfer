@@ -1,0 +1,117 @@
+SklearnCompatibleTabNetClassifier Cross-Validation Performance:
+Best trial:
+  Value: 0.6804070881226053
+  Best hyperparameters:
+    Adopt StandardScalar for numeric features: True
+    Adopt OneHotEncoder for categorical features: True
+    Adopt feature selection: None
+    n_d: 4
+    n_a: 6
+    n_steps: 3
+    gamma: 1.140937725851713
+    lambda_sparse: 0.0005365450324352025
+    momentum: 0.08681354023778796
+    clip_value: 1.849599281574283
+    scheduler_params: None
+    verbose: 0
+    device_name: xpu
+    batch_size: 47
+    virtual_batch_size: 18
+    max_epochs: 17
+
+Best trial: 2. Best value: 0.701135: 100%|██████████| 100/100 [03:39<00:00,  2.19s/it]
+RandomForestClassifier Cross-Validation Performance:
+Best trial:
+  Value: 0.7011350574712644
+  Best hyperparameters:
+    Adopt StandardScalar for numeric features: False
+    Adopt OneHotEncoder for categorical features: True
+    Adopt feature selection: None
+    n_estimators: 950
+    max_depth: 29
+    min_samples_split: 17
+    min_samples_leaf: 4
+    max_features: sqrt
+    random_state: 42
+
+Best trial: 19. Best value: 0.670388: 100%|██████████| 100/100 [01:11<00:00,  1.39it/s]
+XGBClassifier Cross-Validation Performance:
+Best trial:
+  Value: 0.6703879310344828
+  Best hyperparameters:
+    Adopt StandardScalar for numeric features: True
+    Adopt OneHotEncoder for categorical features: True
+    Adopt feature selection: None
+    n_estimators: 737
+    max_depth: 8
+    learning_rate: 0.0054692231235925395
+    subsample: 0.7821256461460095
+    colsample_bytree: 0.37130317642380123
+    random_state: 42
+
+Best trial: 56. Best value: 0.690536: 100%|██████████| 100/100 [01:37<00:00,  1.03it/s]
+MLPClassifier Cross-Validation Performance:
+Best trial:
+  Value: 0.690536398467433
+  Best hyperparameters:
+    Adopt StandardScalar for numeric features: True
+    Adopt OneHotEncoder for categorical features: False
+    Adopt feature selection: None
+    hidden_layer_sizes: 5
+    activation: identity
+    solver: lbfgs
+    alpha: 0.0018328226371899805
+    learning_rate: constant
+    random_state: 42
+    max_iter: 191
+
+Best trial: 31. Best value: 0.665196: 100%|██████████| 100/100 [09:23<00:00,  5.63s/it]
+LGBMClassifier Cross-Validation Performance:
+Best trial:
+  Value: 0.6651963601532567
+  Best hyperparameters:
+    Adopt StandardScalar for numeric features: False
+    Adopt OneHotEncoder for categorical features: False
+    Adopt feature selection: None
+    n_estimators: 296
+    learning_rate: 0.014247412064304842
+    num_leaves: 79
+    max_depth: 13
+    min_data_in_leaf: 44
+    random_state: 42
+
+Best trial: 80. Best value: 0.68069: 100%|██████████| 100/100 [04:11<00:00,  2.52s/it]
+AdaBoostClassifier Cross-Validation Performance:
+Best trial:
+  Value: 0.6806896551724138
+  Best hyperparameters:
+    Adopt StandardScalar for numeric features: True
+    Adopt OneHotEncoder for categorical features: False
+    Adopt feature selection: LogisticRegression
+    n_estimators: 408
+    learning_rate: 0.025307814358249456
+    algorithm: SAMME
+    random_state: 42
+
+Best trial: 53. Best value: 0.706729: 100%|██████████| 100/100 [03:02<00:00,  1.82s/it]
+CatBoostClassifier Cross-Validation Performance:
+Best trial:
+  Value: 0.7067289272030651
+  Best hyperparameters:
+    Adopt StandardScalar for numeric features: True
+    Adopt OneHotEncoder for categorical features: False
+    Adopt feature selection: LogisticRegression
+    iterations: 99
+    learning_rate: 0.014315750667998532
+    depth: 8
+    l2_leaf_reg: 6
+    early_stopping_rounds: 15
+    verbose: 0
+    random_state: 42
+
+AUC: 0.7658
+F1 Score: 0.8533
+Accuracy: 0.7684
+Sensitivity: 0.8649
+Specificity: 0.4286
+Youden's J Score: 0.2934
