@@ -2,6 +2,10 @@ from pytorch_tabnet.tab_model import TabNetClassifier
 from sklearn.base import BaseEstimator, ClassifierMixin
 import numpy as np  
 from sklearn.utils._tags import InputTags
+import torch
+
+print("xpu available: ", torch.xpu.is_available())
+
 class SklearnCompatibleTabNetClassifier(BaseEstimator, ClassifierMixin):
     _estimator_type = "classifier"  # Tells scikit-learn it's a classifier
 
@@ -56,7 +60,7 @@ model.fit(
 print("Tabnet classifier done.")
 
 model2 = SklearnCompatibleTabNetClassifier(
-    n_d=8, n_a=8, n_steps=3, verbose=1,
+    n_d=8, n_a=8, n_steps=3, verbose=1, device_name='xpu'
 )
 X_train, X_valid, y_train, y_valid = train_test_split(X, y, test_size=0.2, random_state=42)
 

@@ -1,15 +1,119 @@
-Best trial: 5. Best value: 0.694157: 100%|██████████| 100/100 [02:37<00:00,  1.58s/it]
+SklearnCompatibleTabNetClassifier Cross-Validation Performance:
+Best trial:
+  Value: 0.6673395593869732
+  Best hyperparameters:
+    Adopt StandardScalar for numeric features: False
+    Adopt OneHotEncoder for categorical features: False
+    Adopt feature selection: RandomForest
+    Adopt oversampling using SMOTE: False
+    n_d: 8
+    n_a: 6
+    n_steps: 3
+    gamma: 1.1410057356546628
+    lambda_sparse: 0.00024472440973990144
+    momentum: 0.03735760514214135
+    clip_value: 1.7761304046088764
+    scheduler_params: None
+    verbose: 0
+    device_name: xpu
+    batch_size: 43
+    virtual_batch_size: 20
+    max_epochs: 15
+
+Best trial: 70. Best value: 0.711681: 100%|██████████| 100/100 [03:44<00:00,  2.24s/it]
 RandomForestClassifier Cross-Validation Performance:
 Best trial:
-  Value: 0.6941570881226053
+  Value: 0.7116810344827587
   Best hyperparameters:
     Adopt StandardScalar for numeric features: True
     Adopt OneHotEncoder for categorical features: True
     Adopt feature selection: None
     Adopt oversampling using SMOTE: False
-    n_estimators: 727
-    max_depth: 15
-    min_samples_split: 15
-    min_samples_leaf: 9
-    max_features: log2
+    n_estimators: 631
+    max_depth: 27
+    min_samples_split: 20
+    min_samples_leaf: 8
+    max_features: sqrt
     random_state: 42
+
+Best trial: 76. Best value: 0.675436: 100%|██████████| 100/100 [01:15<00:00,  1.33it/s]
+XGBClassifier Cross-Validation Performance:
+Best trial:
+  Value: 0.6754358237547893
+  Best hyperparameters:
+    Adopt StandardScalar for numeric features: False
+    Adopt OneHotEncoder for categorical features: True
+    Adopt feature selection: None
+    Adopt oversampling using SMOTE: True
+    n_estimators: 66
+    max_depth: 20
+    learning_rate: 0.02422636339029422
+    subsample: 0.6526252209685938
+    colsample_bytree: 0.6799772349211916
+    random_state: 42
+
+Best trial: 72. Best value: 0.699334: 100%|██████████| 100/100 [01:38<00:00,  1.02it/s]
+MLPClassifier Cross-Validation Performance:
+Best trial:
+  Value: 0.6993342911877395
+  Best hyperparameters:
+    Adopt StandardScalar for numeric features: False
+    Adopt OneHotEncoder for categorical features: True
+    Adopt feature selection: None
+    Adopt oversampling using SMOTE: False
+    hidden_layer_sizes: 200
+    activation: relu
+    solver: adam
+    alpha: 0.000255900579433622
+    learning_rate: invscaling
+    random_state: 42
+    max_iter: 118
+
+
+Best trial: 95. Best value: 0.668252: 100%|██████████| 100/100 [05:15<00:00,  3.15s/it]
+LGBMClassifier Cross-Validation Performance:
+Best trial:
+  Value: 0.6682519157088123
+  Best hyperparameters:
+    Adopt StandardScalar for numeric features: False
+    Adopt OneHotEncoder for categorical features: False
+    Adopt feature selection: None
+    Adopt oversampling using SMOTE: True
+    n_estimators: 50
+    learning_rate: 0.02163979624892081
+    num_leaves: 63
+    max_depth: 18
+    min_data_in_leaf: 37
+    random_state: 42
+
+Best trial: 80. Best value: 0.679818: 100%|██████████| 100/100 [01:29<00:00,  1.11it/s]
+AdaBoostClassifier Cross-Validation Performance:
+Best trial:
+  Value: 0.6798180076628353
+  Best hyperparameters:
+    Adopt StandardScalar for numeric features: False
+    Adopt OneHotEncoder for categorical features: False
+    Adopt feature selection: None
+    Adopt oversampling using SMOTE: True
+    n_estimators: 159
+    learning_rate: 0.2783132377570126
+    algorithm: SAMME
+    random_state: 42
+
+Best trial: 58. Best value: 0.696609: 100%|██████████| 100/100 [03:22<00:00,  2.02s/it]
+CatBoostClassifier Cross-Validation Performance:
+Best trial:
+  Value: 0.6966091954022988
+  Best hyperparameters:
+    Adopt StandardScalar for numeric features: False
+    Adopt OneHotEncoder for categorical features: True
+    Adopt feature selection: None
+    Adopt oversampling using SMOTE: False
+    iterations: 50
+    learning_rate: 0.027157664941766187
+    depth: 5
+    l2_leaf_reg: 6
+    early_stopping_rounds: 19
+    verbose: 0
+    random_state: 42
+
